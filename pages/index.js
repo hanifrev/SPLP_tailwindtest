@@ -8,7 +8,10 @@ export default function Home() {
         <title>April Ethereal</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className="flex bg-blackgrey mx-auto flex-shrink w-full md:w-11/12">
+      <body className="bg-blackgrey mx-auto flex-shrink w-full md:w-11/12">
+        <header className="flex flex-col">
+          <h1 className="text-3xl text-blue-500">Product Name</h1>
+        </header>
         <div className="flex flex-col sm:flex-row">
           {/* container above ise used to determinde flex direction of below containers */}
           {/* LEFT SIDE */}
@@ -30,7 +33,7 @@ export default function Home() {
                 </h1>
               </div>
               <div>
-                <p className="text-xs sm:text-sm">
+                <p className="text-yellow-400 text-xs sm:text-sm">
                   Chances are unless you are very lucky you will go thru Chances
                   are unless you are very lucky you will go thru
                 </p>
@@ -50,6 +53,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <footer className="text-center mt-12">
+          <p>
+            Protected by reCAPTCHA and the Google Privacy Policy and Terms of
+            Service apply.
+          </p>
+        </footer>
       </body>
     </div>
   );
