@@ -1,65 +1,85 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Button from "../components/Button";
+import TextField from "../components/TextField";
 
-export default function Home() {
+export default function Fair1() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>April Ethereal</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <body className="bg-blackgrey mx-auto flex-shrink w-full md:w-11/12">
-        <header className="flex flex-col">
-          <h1 className="text-3xl text-blue-500">Product Name</h1>
+    <body className="bg-bluesky">
+      <div
+        className="h-screen flex py-0 px-2 flex-col justify-start items-center w-full sm:justify-center"
+        style={{
+          fontFamily: ["Ubuntu", "Helvetica", "Arial", "sans-serif"],
+        }}
+      >
+        <Head>
+          <title>April Ethereal</title>
+          <link rel="icon" href="/favicon.ico" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <header className="flex flex-row absolute justify-between top-0 w-full px-3 pt-3 sm:top-0 md:top-6">
+          <h1 className="text-base font-bold text-white sm:text-2xl">
+            Product Name
+          </h1>
+          <h1 className="text-base font-bold text-white sm:text-xl">
+            Language
+          </h1>
         </header>
-        <div className="flex flex-col sm:flex-row">
-          {/* container above ise used to determinde flex direction of below containers */}
-          {/* LEFT SIDE */}
-          <div className="w-full">
-            <div>
-              <h3 className="text-green-500 text-lg sm:text-2xl">
-                Online Fair
-              </h3>
-            </div>
-            <div>
-              <h5 className="text-gray-400 text-xs sm:text-sm">
-                Linux Or Windows Which is it
-              </h5>
-            </div>
-            <div>
+        <content className="mx-auto flex-shrink w-11/12 pt-24 sm:pt-40 md:pt-0 sm:w-10/12">
+          <div className="flex flex-col md:flex-row">
+            {/* container above ise used to determinde flex direction of below containers */}
+            {/* LEFT SIDE */}
+            <div className="w-full pb-16 sm:pb-0">
               <div>
-                <h1 className="text-white text-3xl sm:text-5xl">
-                  Study abroad online fair title title title
+                <h5 className="text-white text-sm pb-2 sm:text-2xl leading-7 sm:pb-8">
+                  Above The Sky
+                </h5>
+              </div>
+              <div>
+                <h1 className="text-white text-3xl font-bold pb-2 tracking-wide sm:text-7xl leading-10 sm:pb-8 ">
+                  Between The Buried and Me 2020 Tour
                 </h1>
               </div>
               <div>
-                <p className="text-yellow-400 text-xs sm:text-sm">
-                  Chances are unless you are very lucky you will go thru Chances
-                  are unless you are very lucky you will go thru
+                <p className="text-white text-sm sm:text-2xl font-light pb-10">
+                  Grammy nominated progressive death metal band will coming to
+                  your City. Sign up to get special offers
                 </p>
               </div>
-              <div>
-                <form></form>
+              <form className="flex flex-col sm:flex-row">
+                {/* FORM UNDER DEVELOPMENT */}
+                <TextField
+                  className="h-11 bg-transparent rounded-md border px-3 border-white border-solid text-white placeholder-white text-xs mb-2 mr-0 sm:w-72 sm:mr-1"
+                  type="text"
+                  placeholder="Email"
+                />
+                <Button
+                  className="h-11 bg-white w-full rounded-md text-skyblue text-xs font-bold sm:w-28"
+                  value="Sign Up Now"
+                />
+              </form>
+            </div>
+            {/* RIGHT SIDE */}
+            <div className="w-full">
+              <div className="flex w-full mx-auto">
+                <img
+                  className="relative pl-0 sm:pl-20 md:fixed md:pl-0 lg:pl-20"
+                  src="https://res.cloudinary.com/avl/image/upload/v1611051545/single-page-landing/Group_9.png"
+                  alt="test"
+                />
               </div>
             </div>
           </div>
-          {/* RIGHT SIDE */}
-          <div className="w-full">
-            <div className="flex">
-              <div>
-                RIGHTSIDE
-                <img src="https://i.imgur.com/QPhQ2Su.jpg" alt="test" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer className="text-center mt-12">
-          <p>
+        </content>
+        <footer className="text-center mt-12 relative bottom-5 md:w-11/12 md:absolute">
+          <p className="text-white text-xxs sm:text-xs">
             Protected by reCAPTCHA and the Google Privacy Policy and Terms of
             Service apply.
           </p>
         </footer>
-      </body>
-    </div>
+      </div>
+    </body>
   );
 }

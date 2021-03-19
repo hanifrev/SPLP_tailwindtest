@@ -12,6 +12,10 @@ module.exports = {
       },
       colors: {
         blackgrey: "#262424",
+        bluesky: "#33AACF",
+      },
+      fontSize: {
+        xxs: "8px",
       },
     },
   },

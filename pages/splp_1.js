@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Fair1() {
   return (
-    <body className="bg-skyblue">
+    <body className="bg-bluesky">
       <div
         className="h-screen flex py-0 px-2 flex-col justify-start items-center w-full sm:justify-center"
         style={{
@@ -32,7 +32,7 @@ export default function Fair1() {
             <div className="w-full pb-16 sm:pb-0">
               <div>
                 <h5 className="text-white text-sm pb-2 sm:text-2xl leading-7 sm:pb-8">
-                  Student Loan
+                  Above The Sky
                 </h5>
               </div>
               <div>
