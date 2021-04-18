@@ -79,7 +79,7 @@ export default function Fair1() {
         <footer className="text-center mt-12 relative bottom-5 md:w-11/12 md:absolute">
           <p className="text-white text-xxs sm:text-xs">
             Protected by reCAPTCHA and the Google Privacy Policy and Terms of
-            Service apply.
+            Service apply
           </p>
         </footer>
       </div>
