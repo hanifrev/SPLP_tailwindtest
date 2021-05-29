@@ -1,14 +1,15 @@
-import Head from "next/head";
-import Button from "../components/Button";
-import TextField from "../components/TextField";
+/* eslint-disable no-unused-vars */
+import Head from 'next/head'
+import Button from '../components/Button'
+import TextField from '../components/TextField'
 
-export default function Fair1() {
+export default function Fair1 () {
   return (
-    <body className="bg-bluesky">
+    <div className="bg-bluesky">
       <div
         className="h-screen flex py-0 px-2 flex-col justify-start items-center w-full sm:justify-center"
         style={{
-          fontFamily: ["Ubuntu", "Helvetica", "Arial", "sans-serif"],
+          fontFamily: ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif']
         }}
       >
         <Head>
@@ -83,6 +84,6 @@ export default function Fair1() {
           </p>
         </footer>
       </div>
-    </body>
-  );
+    </div>
+  )
 }

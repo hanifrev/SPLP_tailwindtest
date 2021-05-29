@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Fair1() {
   return (
-    <body className="bg-bluesky">
+    <div className="bg-bluesky">
       <div
         className="h-screen flex py-0 px-2 flex-col justify-start items-center w-full sm:justify-center"
         style={{
@@ -77,6 +77,6 @@ export default function Fair1() {
           </p>
         </footer>
       </div>
-    </body>
+    </div>
   );
 }
